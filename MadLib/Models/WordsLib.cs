@@ -5,14 +5,14 @@ namespace MadLib.Models
     private string _noun;
     private string _verb;
     private string _adjective;
-    private string _partOfBody
+    // private string _partOfBody;
 
     public string GetNoun()
     {
       return _noun;
     }
 
-    public string SetNoun(string newNoun)
+    public void SetNoun(string newNoun)
     {
       _noun = newNoun;
     }
@@ -22,10 +22,21 @@ namespace MadLib.Models
       return _verb;
     }
 
-    public string SetVerb(string newVerb)
+    public void SetVerb(string newVerb)
     {
       _verb = newVerb;
     }
+
+    public string GetAdjective()
+    {
+      return _adjective;
+    }
+
+    public void SetAdjective(string newAdjective)
+    {
+      _adjective = newAdjective;
+    }
+
 
   }
 }
